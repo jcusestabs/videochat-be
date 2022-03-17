@@ -30,4 +30,4 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(80, () => console.log("server is running on port 80"));
+server.listen(process.env.PORT, () => console.log("server is running on port " + process.env.PORT));
